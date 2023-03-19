@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Quizz2.0</string>
+    <string name="start_button">Start</string>
+    <string name="quelle_est_ton_nom">Quelle est ton nom ?</string>
+</resources>

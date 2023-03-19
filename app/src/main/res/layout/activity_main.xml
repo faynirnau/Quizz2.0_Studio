@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA96FF"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".controller.MainActivity">
+
+    <TextView
+        android:id="@+id/nomAppTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="96sp" />
+
+    <EditText
+        android:id="@+id/nomJoueurEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/quelle_est_ton_nom" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="140dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="180dp"
+        android:text="@string/start_button" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

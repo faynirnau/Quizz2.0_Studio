@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.QuestionFragment"
+    android:id="@+id/questionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:background="#BA96FF">
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="160dp"
+            android:text="Quel est la couleur du cheval blanc d'Henri IV ?"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/reponseA"
+                style="@style/Widget.MaterialComponents.Button"
+
+                android:layout_width="190dp"
+                android:layout_height="90dp"
+                android:text="Rouge"/>
+            <Button
+                android:id="@+id/reponseB"
+                android:layout_width="190dp"
+                android:layout_height="90dp"
+                android:text="brun"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/reponseC"
+                android:layout_width="190dp"
+                android:layout_height="90dp"
+                android:text="blanc" />
+
+            <Button
+                android:id="@+id/reponseD"
+                android:layout_width="190dp"
+                android:layout_height="90dp"
+                android:text="la reponse D" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pikaOmbre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pikachu_noir"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pikaBulbi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pikachu"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>
