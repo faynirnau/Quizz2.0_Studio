@@ -12,10 +12,8 @@ import android.os.Bundle;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.example.quizz20.R;
-import com.example.quizz20.modele.Bdd;
 
 public class MainActivity extends AppCompatActivity {
-    private Bdd bdd;
     private TextView titre;
     private EditText nomJoueurEditText;
     private Button boutonStart;
@@ -23,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bdd = new Bdd();
-        Log.d("bdd", "onCreate: bdd intancier");
         titre = findViewById(R.id.nomAppTextView);
         nomJoueurEditText = findViewById(R.id.nomJoueurEditText);
         boutonStart = findViewById(R.id.StartButton);
